@@ -3,9 +3,9 @@
 body {
   font-family: var(--main-font-family);
   color: var(--main-color);
-  font-size: rem(14);
+  font-size: rem(18);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
   // color: $mainColor;
   // overflow-wrap: break-word;
   // word-wrap: break-word;
@@ -45,21 +45,27 @@ body._lock {
   justify-content: center;
   align-items: center;
   width: fit-content;
+  background: var(--green-color);
+  border-radius: 0.56rem;
+  min-width: rem(120);
+  min-height: rem(49);
   // color: var(--green);
-  // font-size: rem(12);
-  // min-height: rem(36);
-  // padding: rem(8) rem(24);
-  // border-radius: rem(4);
-  // border: 1px solid var(--green);
+  font-weight: 500;
+  font-size: rem(16);
+  padding: rem(14) rem(25);
+  border: 1px solid transparent;
   text-align: center;
   user-select: none;
-  transition: all 0.3s ease 0s;
-  // @media (any-hover: hover) and (pointer: fine) {
-  // 	&:hover {
-  // 		color: var(--white);
-  // 		background: var(--green);
-  // 	}
-  // }
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  @media (any-hover: hover) and (pointer: fine) {
+    &:hover {
+      color: var(--white);
+      background: #2adca7;
+    }
+  }
 }
 
 /*--------- visually-hidden ---------*/

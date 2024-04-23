@@ -3,9 +3,11 @@
 // Возможно, лучше использовать css-переменные, а не scss. Тогда, к примеру, в будущем можно очень легко на всем сайте поменять цвет, который применяется во множестве мест. Пример использования:
 
 :root {
-  --main-color: #000;
+  --main-color: #0c1523;
+  --green-color: #41f5c0;
+  --orange-color: #f8b200;
   --white-color: #fff;
-  --main-font-family: "Roboto", "Arial", sans-serif;
+  --main-font-family: "Inter", sans-serif;
   // самые частые font-size, font-family, font-weight, line-height вставляем в body без переменных. Но font-family можно занести в переменные.
 }
 // .block {
@@ -19,7 +21,7 @@
 // $maxWidth - размер max-width для __container. Поменять на тот, что по макету
 // $maxWidth: 1280px;
 
-$maxWidthPx: 1280; // Это ширина в пикселях, но пишем без пикселей, чтобы пересчитать в ремы
+$maxWidthPx: 1170; // Это ширина в пикселях, но пишем без пикселей, чтобы пересчитать в ремы
 $minWidthPx: 320;
 
 // Если хотим maxWidth и minWidth в ремах, то пишем следующее:
