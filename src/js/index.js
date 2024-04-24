@@ -83,3 +83,16 @@
 // import showHideFixedHeader from "./modules/hide-show-fixed-header";
 
 // showHideFixedHeader();
+
+// ========= Анимируем числа из блока statistics ========= //
+
+// import showHideFixedHeader from "./modules/hide-show-fixed-header";
+
+// showHideFixedHeader();
+
+import animateStatistisNumbers from "./modules/statistics";
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  // gsap code here!
+  animateStatistisNumbers();
+});

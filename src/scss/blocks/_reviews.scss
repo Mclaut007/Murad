@@ -3,13 +3,13 @@
   // .review__container
 
   &__container {
-    padding: proadrem(50, 120, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
+    padding: proadrem(50, 115, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
   }
 
   // .review__heading
 
   &__heading {
-    margin-bottom: proadrem(10, 40, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(10, 35, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .review__paragraph
@@ -115,7 +115,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    margin-bottom: rem(12);
+    margin-bottom: rem(14);
   }
 
   // .review-card__person-img

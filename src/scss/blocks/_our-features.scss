@@ -67,7 +67,7 @@
 
   &__heading {
     // margin-bottom: rem(40);
-    margin-bottom: proadrem(15, 40, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(15, 41, $minWidthRemWithout, $maxWidthRemWithout);
     text-align: left;
     line-height: 1.2;
     @media (max-width: $mobile) {
@@ -99,7 +99,7 @@
   &__item-icon {
     width: rem(40);
     height: rem(40);
-    margin-bottom: rem(15);
+    margin-bottom: rem(16);
   }
 
   // .our-features__paragraph

@@ -17,6 +17,7 @@
   // .start__texts
 
   &__texts {
+    padding-left: rem(12);
   }
 
   // .start__heading
@@ -26,7 +27,7 @@
     // font-size: rem(32);
     font-size: proadrem(22, 32, $minWidthRemWithout, $maxWidthRemWithout);
     // margin-bottom: rem(15);
-    margin-bottom: proadrem(5, 15, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(5, 12, $minWidthRemWithout, $maxWidthRemWithout);
     text-align: left;
     @media (max-width: $mobile) {
       text-align: center;

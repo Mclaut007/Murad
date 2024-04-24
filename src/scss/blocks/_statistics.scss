@@ -1,14 +1,14 @@
 .statistics {
   // .statistics__container
   &__container {
-    padding: rem(130) rem(15) rem(150);
-    padding: proadrem(60, 130, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+    // padding: rem(130) rem(15) rem(150);
+    padding: proadrem(60, 125, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
       proadrem(50, 150, $minWidthRemWithout, $maxWidthRemWithout);
   }
   // .statistics__heading
   &__heading {
     // margin-bottom: rem(60);
-    margin-bottom: proadrem(20, 60, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(20, 50, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .statistics__items
@@ -40,7 +40,7 @@
     // font-size: rem(32);
     font-size: proadrem(28, 32, $minWidthRemWithout, $maxWidthRemWithout);
     // margin-bottom: rem(8);
-    margin-bottom: proadrem(0, 8, $minWidthRemWithout, $maxWidthRemWithout);
+    margin-bottom: proadrem(0, 5, $minWidthRemWithout, $maxWidthRemWithout);
   }
 
   // .statistics__text
