@@ -1,0 +1,56 @@
+.start {
+  // .start__container
+
+  &__container {
+    padding: 0 rem(15) proadrem(20, 130, $minWidthRemWithout, $maxWidthRemWithout);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(40);
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+      gap: rem(25);
+    }
+  }
+
+  // .start__texts
+
+  &__texts {
+  }
+
+  // .start__heading
+
+  &__heading {
+    font-weight: 500;
+    // font-size: rem(32);
+    font-size: proadrem(22, 32, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: rem(15);
+    margin-bottom: proadrem(5, 15, $minWidthRemWithout, $maxWidthRemWithout);
+    text-align: left;
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+
+  // .start__paragraph
+
+  &__paragraph {
+    @media (max-width: $tablet) {
+      font-size: rem(16);
+    }
+  }
+
+  // .start__button
+
+  &__button {
+    flex-shrink: 0;
+  }
+}
+
+.button {
+  // .button_black
+
+  &_black {
+  }
+}

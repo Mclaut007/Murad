@@ -1,0 +1,112 @@
+.our-features {
+  background: #fafbff;
+  // .our-features__container
+
+  &__container {
+    padding: rem(120) rem(15);
+    padding: proadrem(30, 120, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
+  }
+
+  // .our-features__items
+
+  &__items {
+    max-width: rem(946);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-content: center;
+    // gap: rem(30);
+    gap: proadrem(10, 30, $minWidthRemWithout, $maxWidthRemWithout);
+    // padding: rem(120) 0;
+    @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .our-features__item
+
+  &__item {
+    // padding: rem(50);
+    padding: proadrem(20, 50, $minWidthRemWithout, $maxWidthRemWithout);
+    position: relative;
+    &:first-child {
+      // padding: rem(24) rem(50);
+      padding: rem(24) proadrem(20, 50, $minWidthRemWithout, $maxWidthRemWithout);
+      @media (max-width: $mobile) {
+        padding: 0;
+        margin-bottom: rem(-10);
+      }
+      @media (max-width: $mobile) and (min-width: $mobileSmall) {
+        grid-column: span 2;
+      }
+      // @media (max-width: $mobileSmall) {
+      // }
+    }
+    &:not(:first-child) {
+      &::after {
+        content: "";
+        width: 100%;
+        height: rem(5);
+        @media (max-width: $mobile) {
+          height: rem(3);
+        }
+        background-image: linear-gradient(
+          90deg,
+          rgba(65, 245, 192, 0.05),
+          rgba(65, 245, 192, 1),
+          rgba(65, 245, 192, 0.05)
+        );
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  // .our-features__heading
+
+  &__heading {
+    // margin-bottom: rem(40);
+    margin-bottom: proadrem(15, 40, $minWidthRemWithout, $maxWidthRemWithout);
+    text-align: left;
+    line-height: 1.2;
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+
+  // .our-features__item-heading
+
+  &__item-heading {
+    font-weight: 500;
+    // font-size: 1.5rem;
+    font-size: proadrem(20, 24, $minWidthRemWithout, $maxWidthRemWithout);
+    line-height: 1.5;
+    // margin-bottom: rem(15);
+    margin-bottom: proadrem(5, 15, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .our-features__button
+
+  &__button {
+    @media (max-width: $mobile) {
+      margin: 0 auto;
+    }
+  }
+
+  // .our-features__item-icon
+
+  &__item-icon {
+    width: rem(40);
+    height: rem(40);
+    margin-bottom: rem(15);
+  }
+
+  // .our-features__paragraph
+
+  &__paragraph {
+    @media (max-width: $tablet) {
+      font-size: rem(16);
+    }
+  }
+}

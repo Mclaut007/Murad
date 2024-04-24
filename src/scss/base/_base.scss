@@ -52,7 +52,7 @@ body._lock {
   // color: var(--green);
   font-weight: 500;
   font-size: rem(16);
-  padding: rem(14) rem(25);
+  padding: rem(10) rem(25);
   border: 1px solid transparent;
   text-align: center;
   user-select: none;
@@ -64,6 +64,18 @@ body._lock {
     &:hover {
       color: var(--white);
       background: #2adca7;
+    }
+  }
+  // .button_black
+  &_black {
+    color: #fafbff;
+    background: var(--main-color);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--main-color);
+        border-color: var(--main-color);
+        background: transparent;
+      }
     }
   }
 }
@@ -95,4 +107,18 @@ body._lock {
 
 .none {
   display: none !important;
+}
+
+.heading2 {
+  font-weight: 600;
+  // font-size: rem(42.54);
+  font-size: proadrem(28, 42.54, $minWidthRemWithout, $maxWidthRemWithout);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.paragraph {
+  @media (max-width: $tablet) {
+    font-size: rem(16);
+  }
 }

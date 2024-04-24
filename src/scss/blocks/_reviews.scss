@@ -1,0 +1,150 @@
+.review {
+  background: #fafbff;
+  // .review__container
+
+  &__container {
+    padding: proadrem(50, 120, $minWidthRemWithout, $maxWidthRemWithout) rem(15);
+  }
+
+  // .review__heading
+
+  &__heading {
+    margin-bottom: proadrem(10, 40, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .review__paragraph
+
+  &__paragraph {
+    text-align: center;
+    max-width: rem(538);
+    margin: 0 auto proadrem(30, 61, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .review__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(30);
+    @media (max-width: $tablet) {
+      gap: rem(20);
+      grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+    }
+  }
+
+  // .review__card
+
+  &__card {
+  }
+}
+
+.review-card {
+  border: 1px solid rgba(65, 245, 192, 0.2);
+  border-radius: rem(20);
+  background: #fff;
+  padding: rem(35) rem(42) rem(40);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: $maxWidth) {
+    padding: rem(25);
+  }
+  @media (max-width: $tablet) {
+    padding: rem(20);
+  }
+  @media (max-width: $mobileMiddle) {
+    max-width: rem(350);
+    margin: 0 auto;
+  }
+
+  // .review-card__rating
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ffd466;
+    border-radius: rem(13);
+    width: fit-content;
+    padding: rem(11) rem(14) rem(12);
+    min-height: rem(50);
+    gap: rem(10);
+    min-width: rem(84);
+    // margin-bottom: rem(56);
+    margin-bottom: proadrem(20, 56, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .review-card__star
+
+  &__star {
+    width: rem(17);
+    height: rem(16);
+  }
+
+  // .review-card__number
+
+  &__number {
+    line-height: 1;
+    color: var(--orange-color);
+  }
+
+  // .review-card__text
+
+  &__text {
+    line-height: 1.6;
+    text-align: center;
+    // margin-bottom: rem(55);
+    margin-bottom: proadrem(20, 55, $minWidthRemWithout, $maxWidthRemWithout);
+    @media (max-width: $mobile) {
+      font-size: rem(16);
+    }
+  }
+
+  // .review-card__person
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .review-card__person-img-wrapper
+
+  &__person-img-wrapper {
+    width: rem(59);
+    height: rem(59);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: rem(12);
+  }
+
+  // .review-card__person-img
+
+  &__person-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  // .review-card__person-name
+
+  &__person-name {
+    font-weight: 500;
+    text-align: center;
+    color: #263959;
+    margin-bottom: rem(10);
+    @media (max-width: $mobile) {
+      margin-bottom: rem(5);
+    }
+  }
+
+  // .review-card__person-profession
+
+  &__person-profession {
+    font-size: rem(14);
+    font-weight: 500;
+  }
+}

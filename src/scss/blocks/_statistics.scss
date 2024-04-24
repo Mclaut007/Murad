@@ -1,0 +1,53 @@
+.statistics {
+  // .statistics__container
+  &__container {
+    padding: rem(130) rem(15) rem(150);
+    padding: proadrem(60, 130, $minWidthRemWithout, $maxWidthRemWithout) rem(15)
+      proadrem(50, 150, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+  // .statistics__heading
+  &__heading {
+    // margin-bottom: rem(60);
+    margin-bottom: proadrem(20, 60, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .statistics__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    // gap: rem(40);
+    gap: proadrem(20, 40, $minWidthRemWithout, $maxWidthRemWithout);
+    justify-content: space-between;
+    max-width: rem(835);
+    margin: 0 auto;
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, auto);
+      justify-content: space-evenly;
+    }
+  }
+
+  // .statistics__item
+
+  &__item {
+    text-align: center;
+  }
+
+  // .statistics__number
+
+  &__number {
+    font-weight: 500;
+    // font-size: rem(32);
+    font-size: proadrem(28, 32, $minWidthRemWithout, $maxWidthRemWithout);
+    // margin-bottom: rem(8);
+    margin-bottom: proadrem(0, 8, $minWidthRemWithout, $maxWidthRemWithout);
+  }
+
+  // .statistics__text
+
+  &__text {
+    font-weight: 500;
+    font-size: rem(13.33);
+    line-height: 1.5;
+  }
+}
